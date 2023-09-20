@@ -1,6 +1,6 @@
 <?php
 
-$number = 100;
+$number = 10;
 $fibo = array(0, 1);
 
 echo "$fibo[0] \n";
