@@ -1,0 +1,56 @@
+<?php
+
+// using for loop
+
+function evenWithFor($start, $finish)
+{
+    // using for loop
+
+    echo "Using for loop, From $start to $finish even numbers are: \n";
+
+    for ($i = $start; $i <= $finish; $i++) {
+        if ($i % 2 == 0) {
+            echo "$i \n";
+        }
+    }
+    ;
+
+}
+
+// using while loop
+
+function evenWithWhile($start, $finish)
+{
+    echo "Using while loop, From $start to $finish even numbers are: \n";
+
+    while ($start <= $finish) {
+        if ($start % 2 == 0) {
+            echo "$start \n";
+        }
+        $start++;
+    }
+}
+
+// using do while loop 
+
+function evenWithDoWhile($start, $finish)
+{
+    echo "Using Do While loop, From $start to $finish even numbers are: \n";
+
+    do {
+        if ($start % 2 == 0) {
+            echo "$start \n";
+        }
+        $start++;
+    } while ($start <= $finish);
+}
+
+
+// calling the functions
+
+evenWithFor(1, 10);
+evenWithWhile(1, 30);
+evenWithDoWhile(1, 50);
+
+
+?>
